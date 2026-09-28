@@ -26,9 +26,7 @@
 
     body {
       min-height: 100vh;
-
       font-family: Arial, Helvetica, sans-serif;
-
       color: #382c2e;
 
       background:
@@ -52,39 +50,29 @@
       overflow-x: hidden;
     }
 
-
     body::before {
-
       content: "";
-
       position: fixed;
-
       inset: 0;
-
       pointer-events: none;
-
       opacity: .32;
 
       background-image:
-
         radial-gradient(
           circle at 20% 30%,
           #ffffff 0 1px,
           transparent 1.5px
         ),
-
         radial-gradient(
           circle at 80% 20%,
           #ffffff 0 1px,
           transparent 1.5px
         ),
-
         radial-gradient(
           circle at 65% 70%,
           #ffffff 0 1px,
           transparent 1.5px
         ),
-
         radial-gradient(
           circle at 25% 80%,
           #ffffff 0 1px,
@@ -98,31 +86,19 @@
         140px 140px;
     }
 
-
     .page {
-
       width: 100%;
-
       max-width: 520px;
-
       min-height: 100vh;
-
       margin: 0 auto;
-
       padding: 34px 20px 38px;
-
       position: relative;
-
       z-index: 1;
     }
 
-
-    /* ==============================
-       VOLVÉ A VOS
-    ============================== */
+    /* VOLVÉ A VOS */
 
     .brand-top {
-
       text-align: center;
 
       font-family:
@@ -131,43 +107,26 @@
         serif;
 
       font-size: 12px;
-
       letter-spacing: 4px;
-
       font-weight: 700;
-
       color: #a87c45;
-
       margin-bottom: 22px;
-
       text-transform: uppercase;
     }
 
-
-    /* ==============================
-       FOTO
-    ============================== */
+    /* FOTO */
 
     .profile-wrap {
-
       position: relative;
-
       width: 145px;
-
       height: 145px;
-
       margin: 0 auto 20px;
     }
 
-
     .profile-ring {
-
       width: 145px;
-
       height: 145px;
-
       padding: 4px;
-
       border-radius: 50%;
 
       background:
@@ -187,98 +146,57 @@
       overflow: hidden;
     }
 
-
     .profile-ring img {
-
       width: 100%;
-
       height: 100%;
-
       display: block;
-
-      /*
-      IMPORTANTE:
-      cover llena todo el círculo.
-      El 18% hace que el encuadre
-      se concentre en la parte superior
-      de la fotografía.
-      */
 
       object-fit: cover;
 
-      object-position: center 18%;
+      /* AJUSTE DE LA FOTO */
+      object-position: center 12%;
 
       border-radius: 50%;
-
       border: 3px solid #fffaf8;
     }
-
 
     /* DESTELLOS */
 
     .sparkle {
-
       position: absolute;
-
       color: #c39a55;
-
       font-size: 21px;
-
-      animation:
-        float 2.6s ease-in-out infinite;
+      animation: float 2.6s ease-in-out infinite;
     }
 
-
     .sparkle.one {
-
       right: -13px;
-
       top: 5px;
     }
 
-
     .sparkle.two {
-
       left: -12px;
-
       bottom: 8px;
-
       font-size: 14px;
-
       animation-delay: .8s;
     }
 
-
     @keyframes float {
-
       0%,
       100% {
-
-        transform:
-          translateY(0)
-          rotate(0);
-
+        transform: translateY(0) rotate(0);
         opacity: .75;
       }
 
-
       50% {
-
-        transform:
-          translateY(-6px)
-          rotate(8deg);
-
+        transform: translateY(-6px) rotate(8deg);
         opacity: 1;
       }
     }
 
-
-    /* ==============================
-       NOMBRE
-    ============================== */
+    /* NOMBRE */
 
     .name {
-
       text-align: center;
 
       font-family:
@@ -286,60 +204,35 @@
         "Times New Roman",
         serif;
 
-      font-size:
-        clamp(28px,7vw,37px);
-
+      font-size: clamp(28px,7vw,37px);
       line-height: 1.05;
-
       letter-spacing: -1px;
-
       color: #3b2b2e;
-
       margin-bottom: 7px;
     }
 
-
     .username {
-
       text-align: center;
-
       color: #a56f7b;
-
       font-size: 14px;
-
       font-weight: 700;
-
       letter-spacing: .5px;
-
       margin-bottom: 15px;
     }
 
-
     .topics {
-
       text-align: center;
-
       color: #8d704d;
-
       font-size: 11px;
-
       font-weight: 800;
-
       letter-spacing: 1.7px;
-
       text-transform: uppercase;
-
       margin-bottom: 12px;
     }
 
-
     .description {
-
       max-width: 410px;
-
-      margin:
-        0 auto 27px;
-
+      margin: 0 auto 27px;
       text-align: center;
 
       font-family:
@@ -348,41 +241,27 @@
         serif;
 
       font-size: 16px;
-
       line-height: 1.55;
-
       color: #5a474b;
     }
 
-
     .description strong {
-
       color: #9b6470;
     }
 
-
-    /* ==============================
-       BOTONES
-    ============================== */
+    /* BOTONES */
 
     .links {
-
       display: flex;
-
       flex-direction: column;
-
       gap: 13px;
     }
 
-
     .link-card {
-
       width: 100%;
-
       min-height: 82px;
 
       display: flex;
-
       align-items: center;
 
       position: relative;
@@ -391,29 +270,20 @@
 
       border-radius: 21px;
 
-      padding:
-        15px 45px 15px 16px;
+      padding: 15px 45px 15px 16px;
 
-      background:
-        rgba(255,255,255,.82);
+      background: rgba(255,255,255,.82);
 
       border:
         1px solid
         rgba(187,130,142,.20);
 
       box-shadow:
-        0 9px 25px
-        rgba(88,53,61,.08),
+        0 9px 25px rgba(88,53,61,.08),
+        inset 0 1px 0 rgba(255,255,255,.95);
 
-        inset
-        0 1px 0
-        rgba(255,255,255,.95);
-
-      backdrop-filter:
-        blur(12px);
-
-      -webkit-backdrop-filter:
-        blur(12px);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
 
       transition:
         transform .2s ease,
@@ -421,48 +291,32 @@
         border-color .2s ease;
     }
 
-
     .link-card:hover {
-
-      transform:
-        translateY(-3px);
+      transform: translateY(-3px);
 
       border-color:
         rgba(187,130,142,.42);
 
       box-shadow:
-        0 14px 32px
-        rgba(88,53,61,.13),
-
-        inset
-        0 1px 0
-        rgba(255,255,255,.95);
+        0 14px 32px rgba(88,53,61,.13),
+        inset 0 1px 0 rgba(255,255,255,.95);
     }
-
 
     .link-card:active {
-
-      transform:
-        scale(.985);
+      transform: scale(.985);
     }
-
 
     /* ICONOS */
 
     .icon {
-
       width: 49px;
-
       height: 49px;
-
       min-width: 49px;
 
       border-radius: 15px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       margin-right: 14px;
@@ -472,19 +326,14 @@
       background: #f8ecef;
     }
 
-
     .link-text {
-
       flex: 1;
     }
 
-
     .link-title {
-
       display: block;
 
       font-size: 13px;
-
       line-height: 1.25;
 
       font-weight: 900;
@@ -496,13 +345,10 @@
       margin-bottom: 5px;
     }
 
-
     .link-subtitle {
-
       display: block;
 
       font-size: 11px;
-
       line-height: 1.35;
 
       color: #917b80;
@@ -510,40 +356,28 @@
       font-weight: 600;
     }
 
-
     .arrow {
-
       position: absolute;
 
       right: 18px;
-
       top: 50%;
 
-      transform:
-        translateY(-50%);
+      transform: translateY(-50%);
 
       font-size: 20px;
 
       color: #b67c88;
 
-      transition:
-        transform .2s ease;
+      transition: transform .2s ease;
     }
-
 
     .link-card:hover .arrow {
-
-      transform:
-        translate(3px,-50%);
+      transform: translate(3px,-50%);
     }
 
-
-    /* ==============================
-       WHATSAPP
-    ============================== */
+    /* WHATSAPP */
 
     .whatsapp {
-
       background:
         linear-gradient(
           135deg,
@@ -556,9 +390,7 @@
         rgba(181,111,127,.27);
     }
 
-
     .whatsapp .icon {
-
       background:
         linear-gradient(
           135deg,
@@ -567,13 +399,9 @@
         );
     }
 
-
-    /* ==============================
-       MENTORÍA
-    ============================== */
+    /* MENTORÍA */
 
     .mentoria {
-
       min-height: 94px;
 
       background:
@@ -589,47 +417,29 @@
         rgba(255,255,255,.35);
 
       box-shadow:
-        0 14px 30px
-        rgba(145,84,99,.25),
-
-        inset
-        0 1px 0
-        rgba(255,255,255,.25);
+        0 14px 30px rgba(145,84,99,.25),
+        inset 0 1px 0 rgba(255,255,255,.25);
     }
-
 
     .mentoria .icon {
-
-      background:
-        rgba(255,255,255,.17);
-
+      background: rgba(255,255,255,.17);
       color: #fff;
     }
 
-
     .mentoria .link-title {
-
       color: #fff;
-
       font-size: 14px;
     }
 
-
     .mentoria .link-subtitle {
-
-      color:
-        rgba(255,255,255,.82);
+      color: rgba(255,255,255,.82);
     }
 
-
     .mentoria .arrow {
-
       color: #fff;
     }
 
-
     .badge {
-
       display: inline-block;
 
       margin-bottom: 5px;
@@ -638,8 +448,7 @@
 
       border-radius: 20px;
 
-      background:
-        rgba(255,255,255,.16);
+      background: rgba(255,255,255,.16);
 
       color: #fff5dc;
 
@@ -652,13 +461,9 @@
       text-transform: uppercase;
     }
 
-
-    /* ==============================
-       YOUTUBE
-    ============================== */
+    /* YOUTUBE */
 
     .youtube .icon {
-
       background:
         linear-gradient(
           135deg,
@@ -667,19 +472,13 @@
         );
     }
 
-
-    /* ==============================
-       FOOTER
-    ============================== */
+    /* FOOTER */
 
     .divider {
-
       width: 58px;
-
       height: 1px;
 
-      margin:
-        30px auto 20px;
+      margin: 30px auto 20px;
 
       background:
         linear-gradient(
@@ -690,15 +489,11 @@
         );
     }
 
-
     .footer {
-
       text-align: center;
     }
 
-
     .footer-main {
-
       font-family:
         Georgia,
         "Times New Roman",
@@ -715,9 +510,7 @@
       margin-bottom: 6px;
     }
 
-
     .footer-small {
-
       color: #ae969b;
 
       font-size: 10px;
@@ -725,57 +518,37 @@
       line-height: 1.5;
     }
 
-
-    /* ==============================
-       CELULAR
-    ============================== */
+    /* CELULAR */
 
     @media (max-width:430px) {
 
       .page {
-
-        padding:
-          27px 16px 30px;
+        padding: 27px 16px 30px;
       }
 
-
       .brand-top {
-
         margin-bottom: 18px;
       }
 
-
       .profile-wrap,
       .profile-ring {
-
         width: 135px;
-
         height: 135px;
       }
 
-
       .description {
-
         font-size: 15px;
-
         margin-bottom: 23px;
       }
 
-
       .link-card {
-
         border-radius: 18px;
-
         padding-left: 13px;
       }
 
-
       .icon {
-
         width: 46px;
-
         height: 46px;
-
         min-width: 46px;
 
         border-radius: 14px;
@@ -787,18 +560,14 @@
   </style>
 </head>
 
-
 <body>
 
   <main class="page">
 
-
     <!-- MARCA -->
 
     <div class="brand-top">
-
       ✦ VOLVÉ A VOS ✦
-
     </div>
 
 
@@ -815,11 +584,9 @@
 
       </div>
 
-
       <span class="sparkle one">
         ✦
       </span>
-
 
       <span class="sparkle two">
         ✦
@@ -831,34 +598,22 @@
     <!-- NOMBRE -->
 
     <h1 class="name">
-
       Antonella Zitella
-
     </h1>
 
-
     <div class="username">
-
       @antozitella
-
     </div>
-
 
     <div class="topics">
-
       Negocios · Mentalidad · Identidad
-
     </div>
 
-
     <p class="description">
-
       Construí el negocio y convertite en
-
       <strong>
         la mujer capaz de sostenerlo.
       </strong>
-
     </p>
 
 
@@ -876,40 +631,25 @@
         rel="noopener noreferrer"
       >
 
-
         <div class="icon">
-
           💗
-
         </div>
-
 
         <div class="link-text">
 
-
           <span class="link-title">
-
             SUMATE A MI COMUNIDAD GRATUITA
-
           </span>
-
 
           <span class="link-subtitle">
-
             Entrá al grupo privado de WhatsApp
-
           </span>
-
 
         </div>
 
-
         <span class="arrow">
-
           ›
-
         </span>
-
 
       </a>
 
@@ -923,47 +663,29 @@
         rel="noopener noreferrer"
       >
 
-
         <div class="icon">
-
           ✨
-
         </div>
-
 
         <div class="link-text">
 
-
           <span class="badge">
-
             VOLVÉ A VOS
-
           </span>
-
 
           <span class="link-title">
-
             MENTORÍA 1 A 1
-
           </span>
-
 
           <span class="link-subtitle">
-
             Negocio + mentalidad + acompañamiento
-
           </span>
-
 
         </div>
 
-
         <span class="arrow">
-
           ›
-
         </span>
-
 
       </a>
 
@@ -977,43 +699,27 @@
         rel="noopener noreferrer"
       >
 
-
         <div class="icon">
-
           ▶️
-
         </div>
-
 
         <div class="link-text">
 
-
           <span class="link-title">
-
             MIRÁ MIS VIDEOS EN YOUTUBE
-
           </span>
-
 
           <span class="link-subtitle">
-
             Negocio · dinero · mentalidad
-
           </span>
-
 
         </div>
 
-
         <span class="arrow">
-
           ›
-
         </span>
 
-
       </a>
-
 
     </div>
 
@@ -1022,27 +728,18 @@
 
     <div class="divider"></div>
 
-
     <footer class="footer">
 
-
       <div class="footer-main">
-
         @antozitella · VOLVÉ A VOS ✦
-
       </div>
-
 
       <div class="footer-small">
-
         Construí por fuera lo que primero estás dispuesta
         a sostener por dentro.
-
       </div>
 
-
     </footer>
-
 
   </main>
 
